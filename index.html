@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+  	<title>Toast Example</title>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<script src="jquery-toast-0.1.js"></script>
+  	<link href="toast.css" rel="stylesheet" type="text/css"/>
+  	<script type="text/javascript">//<![CDATA[
+  		$(function(){
+  			var message = $("#totoast");
+  			var timetoasting = $("#timetoasting");
+  			$("#show").click(function(){
+  				var time = parseInt(timetoasting.val());
+  				$("<div>" + message.val() + "</div>").toast({timeout: time});
+  			});
+  		});
+  	//]]></script>
+  </head>
+  <body>
+  	<div>
+  		<label for="timetoasting">How long should we toast (ms):</label><input value="1000" id="timetoasting"/>
+  	</div>
+  	<div>
+    	<label for="totoast">What to toast:</label><input value="Hello, World" id="totoast"/>
+    	<button type="button" id="show">Show toast</button>
+	</div>
+  </body>
+</html>

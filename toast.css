@@ -1,0 +1,53 @@
+/* Toast styling */
+.pp-toast {
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	z-index: 500;
+	max-width: 300px;
+}
+
+.pp-toast-tl {
+	background: transparent url(images/toastcrns.png) no-repeat 0px -12px;
+	padding-left: 12px;
+}
+
+.pp-toast-tc {
+	background: transparent url(images/toastcrns.png) repeat-x 0px -60px;
+	height: 12px;
+}
+
+.pp-toast-tr {
+	padding-right: 12px;
+	background: transparent url(images/toastcrns.png) no-repeat right -24px;
+}
+
+.pp-toast-mr {
+	background: transparent url(images/toastright.png) repeat-y right 0px;
+	padding-right: 12px;
+}
+
+.pp-toast-mc {
+	background: transparent url(images/toastbg.png);
+	color: white;
+}
+
+.pp-toast-ml {
+	padding-left: 12px;
+	background: transparent url(images/toastleft.png) repeat-y left 0px;
+}
+
+.pp-toast-bl {
+	background: transparent url(images/toastcrns.png) no-repeat 0px -48px;
+	padding-left: 12px;
+}
+
+.pp-toast-bc {
+	height: 12px;
+	background: transparent url(images/toastcrns.png) repeat-x 0px 0px;
+}
+
+.pp-toast-br {
+	padding-right: 12px;
+	background: transparent url(images/toastcrns.png) no-repeat right -36px;
+}
