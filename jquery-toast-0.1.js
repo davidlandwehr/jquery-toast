@@ -23,28 +23,12 @@
 								var res = $(".pp-toast-mc", html).append($this);
 								$(document.body).append(html);
 								
-								var _win = jQuery(window);
-								var resizeDialog = function() {
-									var cx = _win.width();
-									var cy = _win.height();
-									var cw = html.width();
-									var ch = html.height();
-									html.css('top', Math.max(0,(cy - Math.max(ch+10, 100) )) + _win.scrollTop());
-									html.css('left', Math.max(0, (cx - cw) / 2));
-								}
-								
-								_win.bind('resize.toast', resizeDialog);
-								_win.bind('scroll.toast', resizeDialog);
-								
 								var cw = html.width();
 								var ch = html.height();
-								html.css('top', Math.max(0,(_win.height() - Math.max(ch+10, 100))) + _win.scrollTop());
-								html.css('left', Math.max(0, (_win.width() - cw) / 2));
+								html.css('margin-left', -cw / 2);
 								html.fadeIn('slow');
 								html.hideIt = function(){
 									html.fadeOut('slow', function(){
-									  _win.unbind('resize.toast', resizeDialog);
-									  _win.unbind('scroll.toast', resizeDialog);
 									  html.remove();
 									  if (jQuery.browser.msie) {
 										html[0].outerHTML="";

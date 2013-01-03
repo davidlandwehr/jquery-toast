@@ -1,8 +1,8 @@
 /* Toast styling */
 .pp-toast {
-	position: absolute;
-	top: 100px;
-	left: 200px;
+	position: fixed;
+	bottom: 10px;
+	left: 50%;
 	z-index: 500;
 	max-width: 300px;
 }
